@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "1035674020405",
+    "firebase_url": "https://dinaro-a00eb.firebaseio.com",
+    "project_id": "dinaro-a00eb",
+    "storage_bucket": "dinaro-a00eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035674020405:android:120b3ec8cdbe0fa5",
+        "android_client_info": {
+          "package_name": "com.dinaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035674020405-6pqa514bt8sif7tbn6b0j84j00ot9r75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinaro",
+            "certificate_hash": "d76c94db454a0c1f7f83bd1fb2aaac3ad58f1a82"
+          }
+        },
+        {
+          "client_id": "1035674020405-jd6faifi7tqoh5dphsn8krsevdn1va2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinaro",
+            "certificate_hash": "08da0c7dd26e0645f834e23e5480e11db26d7d56"
+          }
+        },
+        {
+          "client_id": "1035674020405-jn1c2e06qemiq8h20ac7nltgag038m8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinaro",
+            "certificate_hash": "4577f0adbe2a99fdb9049e77910b7c453d04ae71"
+          }
+        },
+        {
+          "client_id": "1035674020405-ft29gou2sgo25najoj8bgdvp46qt0ivr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dinaro",
+            "certificate_hash": "482fcf65899f2f3a9772570e6b0f6021299303cb"
+          }
+        },
+        {
+          "client_id": "1035674020405-rqmdn63l9df7uae7kjriqddag3h6bb1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_m7DeKsUlVefURjUZWUsDuIe90FOSnxU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035674020405-rqmdn63l9df7uae7kjriqddag3h6bb1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

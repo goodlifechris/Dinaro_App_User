@@ -1,0 +1,157 @@
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_20dp"
+        tools:context=".activities.SavedCardActivity">
+
+        <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/arrow_19" />
+
+            <ImageView
+                android:id="@+id/iv_addcard"
+                android:layout_width="@dimen/height_20dp"
+                android:layout_height="@dimen/height_20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/layer_1" />
+        </RelativeLayout><!-- </android.support.v7.widget.Toolbar>-->
+        <LinearLayout
+            android:id="@+id/llText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlToolbar"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <TextView
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved cards"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/titlets_24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textColor="@color/color_pink"
+                android:textSize="@dimen/titlets_24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvYourSavedCards"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llText"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:text="Your saved cards."
+            android:textSize="@dimen/titlets_16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_NoSavedCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvYourSavedCards"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_noSavedCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/pink_button"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="No Saved Cards"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvWallet"
+                style="@style/customFontStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Please add card by tapping + on the top right of the screen."
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_SavedCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutPay"
+            android:layout_below="@+id/tvYourSavedCards"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_Refresh_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_saved_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+            <Button
+                android:id="@+id/btn_pay_addCard"
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pink_button"
+                android:text="@string/pay"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle_16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StatsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.dinaro.utils.PieChart
+                    android:id="@+id/PieChart"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="24dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        style="@style/Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:drawablePadding="24dp"
+                        android:text="JAN"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textviewKsh"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewName"
+                        android:layout_marginRight="8dp"
+                        android:gravity="bottom"
+                        android:layout_alignBottom="@id/textViewKshAmount"
+                        android:text="KES"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/textViewKshAmount"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewName"
+                        android:layout_toRightOf="@+id/textviewKsh"
+                        android:text="54,000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewKshAmount"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_centerInParent="true"
+                        android:padding="8dp"
+                        android:text="Expenses"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/threebuttons"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_margin="24dp"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:background="@drawable/background_line_border"
+                android:weightSum="3.0">
+                <Button
+                    android:id="@+id/buttonDay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:gravity="center"
+                    android:background="@drawable/button_day"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:text="Day"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+                <Button
+                    android:id="@+id/buttonWeek"
+                    style="?attr/buttonBarButtonStyle"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_week"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:text="Week"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+                <Button
+                    android:id="@+id/buttonMonth"
+                    style="?attr/buttonBarButtonStyle"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_month"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:text="Month"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/padding_16"
+                android:paddingTop="@dimen/padding_16"
+                android:paddingLeft="16dp">
+
+                <include layout="@layout/stats_layout_category"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

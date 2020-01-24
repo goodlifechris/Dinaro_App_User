@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fa315b">
+
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_delete_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/delete_icon"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_savedCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layoutMain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/image_card"
+                    android:layout_width="@dimen/thumbnail_width"
+                    android:layout_height="@dimen/thumbnail_height"
+                    android:layout_gravity="start|center"
+                    android:layout_marginRight="@dimen/activity_padding_horizontal"
+                    android:layout_weight="0.8"
+                    android:src="@drawable/mastercard1" />
+
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:padding="3dp"
+                    android:text="data"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/checkPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_weight="0.2"
+                    android:buttonTint="@color/color_pink" />
+
+            </LinearLayout>
+
+            <!--   <ImageView
+                   android:id="@+id/image"
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:layout_below="@+id/layoutMain"
+                   android:layout_marginTop="3dp"
+                   android:src="@drawable/line" />-->
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

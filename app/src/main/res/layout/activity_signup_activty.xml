@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_signup1"
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/titlets_24sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tv_signup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!"
+                android:textColor="@color/colorPinkDark"
+                android:textSize="@dimen/titlets_24sp"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="43dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:text="@string/country_title"
+                        android:textColor="@color/colorCountry"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:layout_weight="100"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:src="@drawable/group" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="90"
+                            android:text="@string/country"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/tvCountry_18"
+                            android:textStyle="bold"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@color/colorWhite"
+                        android:text="@string/name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <EditText
+                        android:id="@+id/ed_first_name"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:digits="qwertyuioplkjhgfdsazxcbvnmWERRTYUIOPLKJHGFDSAZXCVBNM"
+                        android:hint="First name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/colorEditText"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <EditText
+                        android:id="@+id/ed_middle_name"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:digits="qwertyuioplkjhgfdsazxcbvnmWERRTYUIOPLKJHGFDSAZXCVBNM"
+                        android:hint="Middle name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/colorEditText"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <EditText
+                        android:id="@+id/ed_last_name"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:digits="qwertyuioplkjhgfdsazxcbvnmWERRTYUIOPLKJHGFDSAZXCVBNM"
+                        android:hint="Last name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/colorEditText"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@color/colorWhite"
+                        android:text="@string/mobile"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/tvIsd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="+254 7"
+                            android:textColor="@color/colorEditText"
+                            android:textSize="@dimen/tvCountry_18" />
+
+
+                        <EditText
+                            android:id="@+id/ed_mobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_toEndOf="@+id/tvIsd"
+                            android:background="@null"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/color_black"
+                            android:textColorHint="@color/colorEditText"
+                            android:textSize="@dimen/tvCountry_18"
+                            tools:ignore="RtlCompat" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/Email"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <EditText
+                        android:id="@+id/edemail"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="example@mail.com"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="32"
+
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/colorEditText"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/Password"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <EditText
+                        android:id="@+id/ed_password"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/colorEditText"
+
+                        android:textSize="@dimen/tvCountry_18"
+                        tools:ignore="RtlCompat" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_spantext"
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:background="@color/colorWhite"
+                            android:text="@string/private_policy"
+                            android:textSize="@dimen/tvCountry_18"
+                            tools:ignore="RtlCompat" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:buttonTint="#FFFF00FF"
+                            android:gravity="center" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="28dp"
+                            android:background="@color/colorWhite"
+                            android:text="@string/check"
+                            android:textSize="@dimen/tvCountry_18"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_check_error"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutAmount"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@color/colorRed"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_signup"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_60dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/pink_button"
+                        android:text="Sign up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/tvCountry_18"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

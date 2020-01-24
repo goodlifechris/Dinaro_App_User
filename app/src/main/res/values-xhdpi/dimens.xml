@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="linearItem180dp">166dp</dimen>
+    <dimen name="tvsize_16dp">16sp</dimen>
+    <dimen name="tvconfirm12">12sp</dimen>
+    <dimen name="tv_textViweC">20sp</dimen>
+    <dimen name="title_24sp">24sp</dimen>
+    <dimen name="subtitle_16sp">16sp</dimen>
+    <dimen name="paddin_10sp">10dp</dimen>
+    <dimen name="tvamountsend_32sp">32sp</dimen>
+    <dimen name="tv_confirmpayment12dp">12dp</dimen>
+    <dimen name="margintop_272dp">272dp</dimen>
+
+
+    <dimen name="subtitle_12sp">12sp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="subtitles_12sp">12sp</dimen>
+    <dimen name="buttonTitle_16sp">16sp</dimen>
+    <dimen name="subtilte_16sp">16sp</dimen>
+    <dimen name="buttonSize_60dp">60dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="passing_5dp">5dp</dimen>
+    <dimen name="subtitle9sp">10sp</dimen>
+    <dimen name="width_20dp">20dp</dimen>
+    <dimen name="height_20dp">20dp</dimen>
+    <dimen name="savedcardheight_170">130dp</dimen>
+    <dimen name="marginstartsc_60">70dp</dimen>
+    <dimen name="height_60dp">60dp</dimen>
+    <dimen name="layoutheight_100dp">104dp</dimen>
+    <dimen name="layout_width100dp">104dp</dimen>
+    <dimen name="margin_top_8dp">8dp</dimen>
+    <dimen name="marginTop_8dp">8dp</dimen>
+    <dimen name="marginBottom_5dp">8dp</dimen>
+    <dimen name="marginStart_80dp">75dp</dimen>
+    <dimen name="marginEnd_10dp">15dp</dimen>
+    <dimen name="activity_12sp">10sp</dimen>
+    <dimen name="marginEnd_40dp">35dp</dimen>
+    <dimen name="marginStart_40dp">35dp</dimen>
+
+</resources>

@@ -1,0 +1,230 @@
+<resources>
+    <string name="app_name">Dinaro</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_setting">Settings</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="app_name_dinaro">Dinaro</string>
+    <string name="email">Email</string>
+    <string name="pin">PIN</string>
+    <string name="please_enter_email">*Please enter email.</string>
+    <string name="payments">Payments</string>
+    <string name="recieved">Recieved</string>
+    <string name="sent">Sent</string>
+    <string name="pay">Pay</string>
+    <string name="questionMark">\?</string>
+    <string name="roboto"> Roboto-Bold.ttf </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pay_for_all_your_monthly_needs_with_one_click">Pay for all your monthly needs with \none-click</string>
+    <string name="please_wai">Please wait</string>
+    <string name="server_not_responding">Server not responding.</string>
+    <string name="networ_error">Please check your internet connection</string>
+    <string name="empty_pin">*Please enter a pin.</string>
+    <string name="invalid_pin">*Please enter valid pin</string>
+    <string name="NoData">No data</string>
+    <string name="pinNotExist">*Pin does not exist</string>
+
+    <string name="empty_password">*Please enter password.</string>
+    <string name="invalid_password">*Please enter valid password.</string>
+    <string name="empty_c_password">*Please enter confirm password.</string>
+    <string name="invalid_c_password">*Please enter valid confirm password.</string>
+    <string name="password_not_match">*Password and confirm password do not match.</string>
+    <string name="invalid_email">*Please enter a valid email id.</string>
+    <string name="empty_email">*Please enter email id .</string>
+    <string name="empty_name">*Please enter name.</string>
+    <string name="empty_phone">*Please enter mobile number.</string>
+    <string name="invalid_mobile">*Please enter valid mobile number.</string>
+    <string name="policy">By submitting this form,you accept Dinaro\'s Terms and Condition and Privacy Policy.</string>
+    <string name="coming_soon">Coming soon.</string>
+    <string name="noResponse">No response.</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="pin_not_match">*Pin and confirm pin does not match.</string>
+
+    <string name="empty_first_name">*Please enter first name.</string>
+    <string name="empty_last_name">*Please enter last name.</string>
+    <string name="legal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="private_policy">By submitting this form, you accept Dinaro\'s Terms and Conditions and Privacy Policy.</string>
+    <string name="check">If you DO Not wish to receive marketing information about Dinaro’s products and special offers,please check this box.</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email address</string>
+    <string name="mobile">Mobile number</string>
+    <string name="name">Your full name</string>
+    <string name="country">Kenya</string>
+    <string name="country_title">Country</string>
+    <string name="sign_up">Easy sign up</string>
+    <string name="add_card">Add your card details.</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="addCard">Add card</string>
+    <string name="dot">.</string>
+    <string name="name_on_card">Name on Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="date">MM/YYYY</string>
+    <string name="CVC">CVC</string>
+    <string name="KES_fees">For M-PESA a fee of KES 3 will be charged.</string>
+    <string name="send">Send</string>
+    <string name="KES">KES</string>
+    <string name="reset_pass">Reset password</string>
+    <string name="enter_details">Enter your details.</string>
+    <string name="new_pass">Enter password</string>
+    <string name="c_pass">Confirm password</string>
+    <string name="pay_for">Pay for KPLC</string>
+    <string name="nairobi">Nairboi</string>
+    <string name="view_details">Enter to view amount</string>
+    <string name="consumer_details">Consumer Details</string>
+    <string name="Name">Name</string>
+    <string name="James">JAMES OTIONO</string>
+    <string name="amount_due">Amount Due</string>
+    <string name="KEY2500">KEY2500</string>
+    <string name="due_date">Due Date</string>
+    <string name="Date">31-09-2019</string>
+    <string name="reference_id">Refrence ID</string>
+    <string name="J0301">J0301</string>
+    <string name="number">Number</string>
+    <string name="account_number">Account Number</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="confirm">Kindly Confirm Pin. It will not take much time.</string>
+    <string name="resend">Resend OTP</string>
+    <string name="Continue">Continue</string>
+    <string name="frequently_asked_question">Frequently Asked Questions</string>
+    <string name="forgot_password">Forgot your password</string>
+    <string name="enter_email">Enter your email address.</string>
+    <string name="hint_mail">mail@example.com</string>
+    <string name="enter_number">Enter your mobile number.</string>
+    <string name="your_mobile">Your Mobile number</string>
+    <string name="country_code">+2547</string>
+    <string name="forget_pin">Forgot Your Pin</string>
+    <string name="place_enquire">Place your inquiry.</string>
+    <string name="description">Description</string>
+    <string name="legal_policy">Legal Policy</string>
+    <string name="forgot_Password">Forgot password?</string>
+    <string name="loginDinaro">Log in to Dinaro.</string>
+    <string name="notification">Notifications</string>
+    <string name="payment_successFull">Payment Successful</string>
+    <string name="pay_success">Every transaction that is successful</string>
+    <string name="payment_fail">Payment failed</string>
+    <string name="every_pay_fail">Every transaction that fails</string>
+    <string name="failPayment">Your payment is failed!</string>
+    <string name="otpText">The OTP has been sent to your registered Account.</string>
+    <string name="create_pin">Use this PIN to securely log into the app</string>
+    <string name="failure">failure</string>
+    <string name="empty_Ammount">*Please enter ammount.</string>
+    <string name="empty_Number_Email">*Please enter number or email.</string>
+    <string name="checkBox_Error">*Please check this box.</string>
+    <string name="empty_amount">*Please enter amount.</string>
+    <string name="invalid_fname">*Please enter valid name.</string>
+    <string name="sendOtp">The OTP is send to your registered email address.</string>
+    <string name="otp">OTP</string>
+    <string name="resendOtp">Resend OTP</string>
+    <string name="activity">Activity</string>
+    <string name="intro_title_third">Digital receipts</string>
+    <string name="intro_desc_third">Have records of your payments for easy tracking of you expenditure</string>
+    <string name="emptyDashboard">Dashboard is empty!</string>
+    <string name="empty_Dashboard">Make payments through Dinaro and see all transactions here.</string>
+    <string name="addPaymentMethod">Add Payment Method</string>
+    <string name="enter_pin">Enter your PIN</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="No_account">Don’t have an account?</string>
+    <string name="signup">Sign up!</string>
+    <string name="login">Login</string>
+    <string name="recentActivity">Recent Activity</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="termsCondition">Terms And Condition</string>
+    <string name="privacyPolicyContent">Our Site may contain links to third party websites.
+        When you click on a link to any other website or location,
+        you will leave our Site or Services and go to another site,
+        and another entity may collect personal information or anonymous data from you.
+        We have no control over, do not review, and are not responsible for,
+        these outside websites or their content.
+        Please be aware that the terms of this Privacy Policy do not apply to these outside websites or content, or to any collection of your personal information after you click on links to such outside websites.
+        We encourage you to read the privacy policies of every website you visit.
+        The links to third party websites or locations are for your convenience and do not signify our endorsement of such third parties or their products,
+        content or websites.
+        Our Site may contain links to third party websites.
+        When you click on a link to any other website or location,
+        you will leave our Site or Services and go to another site, and another entity may collect personal information or anonymous data from you. We have no control over, do not review, and are not responsible for, these outside websites or their content.
+        Please be aware that the terms of this Privacy Policy do not apply to these outside websites or content,
+        or to any collection of your personal information after you click on links to such outside websites.
+        We encourage you to read the privacy policies of every website you visit.
+        The links to third party websites or locations are for your convenience and do not signify our endorsement of such third parties or their products, content or websites.</string>
+    <string name="termsAndConditionContent">Our Site may contain links to third party websites.
+        When you click on a link to any other website or location,
+        you will leave our Site or Services and go to another site,
+        and another entity may collect personal information or anonymous data from you.
+        We have no control over, do not review, and are not responsible for,
+        these outside websites or their content.
+        Please be aware that the terms of this Privacy Policy do not apply to these outside websites or content, or to any collection of your personal information after you click on links to such outside websites.
+        We encourage you to read the privacy policies of every website you visit.
+        The links to third party websites or locations are for your convenience and do not signify our endorsement of such third parties or their products,
+        content or websites.
+    Our Site may contain links to third party websites.
+        When you click on a link to any other website or location,
+        you will leave our Site or Services and go to another site,
+        and another entity may collect personal information or anonymous data from you.
+        We have no control over, do not review, and are not responsible for,
+        these outside websites or their content.
+        Please be aware that the terms of this Privacy Policy do not apply to these outside websites or content, or to any collection of your personal information after you click on links to such outside websites.
+        We encourage you to read the privacy policies of every website you visit.
+        The links to third party websites or locations are for your convenience and do not signify our endorsement of such third parties or their products,
+        content or websites.</string>
+    <string name="month_year">Select Month / Year</string>
+    <string name="calandar">Calendar</string>
+    <string name="login_again">Please login through email.</string>
+    <string name="smooooothly_n_paid">Smooooothly\nPaid!</string>
+
+    <string name="bt_form_hint_card_number">Card Number</string>
+    <string name="bt_form_hint_expiration">Expiration Date</string>
+    <string name="bt_form_hint_cvv">@string/bt_cvv</string>
+    <string name="bt_form_hint_cardholder_name">Cardholder Name</string>
+    <string name="bt_form_hint_postal_code">Postal Code</string>
+    <string name="bt_form_hint_country_code">Country Code</string>
+    <string name="bt_form_hint_mobile_number">Mobile Number</string>
+
+    <string name="bt_cvv">CVV</string>
+    <string name="bt_cvc">CVC</string>
+    <string name="bt_cid">CID</string>
+    <string name="bt_cvn">CVN</string>
+
+    <string name="bt_month">Month</string>
+    <string name="bt_year">Year</string>
+
+    <string name="bt_card_number_required">Card number is required</string>
+    <string name="bt_card_number_invalid">Card number is invalid</string>
+    <string name="bt_cvv_required">%s is required</string>
+    <string name="bt_cvv_invalid">%s is invalid</string>
+    <string name="bt_expiration_required">Expiration date is required</string>
+    <string name="bt_expiration_invalid">Expiration date is invalid</string>
+    <string name="bt_cardholder_name_required">Cardholder name is required</string>
+    <string name="bt_postal_code_required">Postal code is required</string>
+    <string name="bt_country_code_required">Country code is required</string>
+    <string name="bt_mobile_number_required">Mobile number is required</string>
+    <string name="enter_account">Enter your KPLC account</string>
+    <string name="amount">Amount</string>
+    <string name="enter_amount_owned">Enter amount owed</string>
+    <string name="amount_to_send">Amount to send</string>
+    <string name="choose_preferred_method_of_payment">Choose preferred method of payment</string>
+    <string name="pay_with">Pay with</string>
+    <string name="back">Back</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="utilities">Utilities</string>
+    <string name="recent">Recent</string>
+    <string name="title_activity_on_boarding_get_started">OnBoardingGetStarted</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="is_registered">Is Registered</string>
+    <string name="not_registered">Not Registered</string>
+
+    <!--implementing otpvie-->
+    <string name="verification_code_subtext">Please type the verification code sent to +xxxxxxxxxx</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="validate">Validate</string>
+    <string name="title_activity_on_click_payment">OnClickPaymentActivity</string>
+
+</resources>

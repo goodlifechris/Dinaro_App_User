@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/llUtility"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="7dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transparent"
+                android:src="@drawable/group_text" />
+
+            <ImageView
+                android:id="@+id/Image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/marginEnd_10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/path_267_copy"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

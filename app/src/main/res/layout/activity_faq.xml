@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.FAQActivity">
+
+        <ImageView
+            android:id="@+id/iv_back_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:src="@drawable/arrow_19"
+            android:tint="@color/color_black" />
+
+        <LinearLayout
+            android:id="@+id/layout_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_back_profile"
+            android:layout_marginStart="5dp"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frequently_asked_question"
+                android:textColor="@color/color_black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:textColor="@color/color_pink"
+                android:textSize="@dimen/ts_24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_questions">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/faqRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+</layout>

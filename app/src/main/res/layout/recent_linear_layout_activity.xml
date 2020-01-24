@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/height_20dp"
+        android:paddingTop="@dimen/margin_10dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingBottom="5dp"
+        android:text="10th jan 2016"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/subtilte_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:layout_marginBottom="7dp"
+        android:paddingRight="@dimen/padding_15dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_zuku"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="2dp"
+                android:src="@drawable/zuku" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:padding="@dimen/passing_5dp">
+
+
+            <TextView
+                android:id="@+id/tv_zuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zuku Kenya"
+                android:textColor="#000"
+                android:textSize="@dimen/subtilte_16sp" />
+
+            <TextView
+                android:id="@+id/tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Payment"
+                android:textColor="#b3aeae"
+                android:textSize="@dimen/subtitle_12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llfield1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/passing_5dp"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_kes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="- KES 2,499"
+                android:textAlignment="textEnd"
+                android:textColor="#000"
+                android:textSize="@dimen/subtilte_16sp" />
+
+            <TextView
+                android:id="@+id/tv_viewreciept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:text="View receipt"
+                android:textAlignment="textEnd"
+                android:textColor="#54c0f0"
+                android:textSize="@dimen/subtitle9sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/line" />
+
+</LinearLayout>
+

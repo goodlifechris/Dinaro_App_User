@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_20dp"
+        tools:context=".activities.HelpSupportActivity">
+
+
+        <ImageView
+            android:id="@+id/arrowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:src="@drawable/arrow_19"
+            android:tint="@color/color_black" />
+
+        <LinearLayout
+            android:id="@+id/layoutTextHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrowing"
+            android:layout_marginTop="20dp"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_help"
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help &amp; Support"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/title_24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:textColor="@color/color_pink"
+                android:textSize="@dimen/ts_24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_inquiry"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTextHelp"
+            android:layout_marginTop="25dp"
+            android:padding="3dp"
+            android:text="@string/place_enquire"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/ts_12sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_inquiry"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edSubject"
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_inquiry"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="#EDEDF2"
+                android:hint="Subject"
+                android:inputType="textCapWords"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/llDescription"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="#EDEDF2">
+
+                <EditText
+                    android:id="@+id/edDescription"
+                    style="@style/customFontStyleRobotoRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edSubject"
+                    android:background="@null"
+                    android:hint="@string/description"
+                    android:inputType="textCapWords"
+                    android:maxLines="8"
+                    android:padding="@dimen/padding_10dp"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pink_button"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/subtitle_16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>

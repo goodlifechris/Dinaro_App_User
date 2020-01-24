@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/tvOtp"
+            style="@style/customFontStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/otp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/subtilte_16sp" />
+
+
+        <TextView
+            android:id="@+id/tvOtp1"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/sendOtp"
+
+            android:textAlignment="center"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/subtilte_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+
+            <com.dinaro.PinEntryView
+                android:id="@+id/pin_entry_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textIsSelectable="true"
+                android:textSize="10sp"
+                android:visibility="visible"
+                app:accentRequiresFocus="true"
+                app:digitBackground="@drawable/pin_background"
+                app:digitTextColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+
+                android:lineSpacingExtra="5.1sp"
+                android:text="@string/resendOtp"
+                android:textColor="#54c0f0"
+                android:textSize="@dimen/subtitle_12sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

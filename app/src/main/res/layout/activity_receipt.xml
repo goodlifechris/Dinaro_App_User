@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pink_button"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/svReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:layout_marginBottom="@dimen/margin_40dp"
+                    android:background="@drawable/box"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingEnd="@dimen/margin_20dp">
+
+                    <LinearLayout
+                        android:id="@+id/layoutSuccess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageSuccess"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:elevation="5dp"
+                            android:src="@drawable/ic_green_tick" />
+
+
+                        <TextView
+                            android:id="@+id/tvReceipt"
+                            style="@style/customFontStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="RECEIPT"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/title_24sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="13dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    style="@style/customFontStyleRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/colorDarkGrey"
+                                    android:textSize="11sp"
+                                    android:visibility="gone"
+                                    tools:ignore="RtlCompat" />
+
+                                <TextView
+                                    android:id="@+id/tvJames"
+                                    style="@style/customFontStyleRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="JAMES OTIONO"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical"
+                                android:padding="2dp">
+
+                                <TextView
+                                    style="@style/customFontStyleRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Paid To"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/colorDarkGrey"
+                                    android:textSize="11sp"
+                                    tools:ignore="RtlCompat" />
+
+                                <TextView
+                                    android:id="@+id/tvPaid"
+                                    style="@style/customFontStyleRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="KPLC"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_PaidTo"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="right|center"
+                            android:layout_weight="2"
+                            android:src="@drawable/kaps_parking" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="13dp"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvDate"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="Date"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tvDate1"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="31-01-2019"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Account number"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textSize="11sp"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:id="@+id/tvMeter"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="14563"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="13dp"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorDarkGrey"
+                            android:textSize="11sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="13dp"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/tvFee"
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fee"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorDarkGrey"
+                            android:textSize="11sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            android:id="@+id/tvKes2"
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KES 15"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="13dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="3.5"
+                            android:orientation="vertical"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/tvRefrence"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Transaction ID"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorDarkGrey"
+                                android:textSize="11sp"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:id="@+id/tvId_util"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="123456"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_PaidToCard"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right|bottom"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/mastercard1"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginStart="@dimen/margin_18"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="@dimen/margin_18"
+                        android:background="@drawable/dash_line"
+                        android:layerType="software" />
+
+                    <!-- <View
+                         android:layout_width="match_parent"
+                         android:layout_height="3dp"
+                         android:layout_marginStart="20dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginEnd="20dp"
+                         android:background="@color/colorDarkGrey" />
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="4dp"
+                         android:layout_marginStart="20dp"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginEnd="20dp"
+                         android:background="@color/colorDarkGrey" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            style="@style/customFontStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="3dp"
+                            android:text="@string/KES"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            android:id="@+id/tvKes"
+                            style="@style/customFontStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:text="2500"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvRate"
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/RatingBar"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Rating"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:visibility="invisible"
+
+                        />
+
+                    <RatingBar
+                        android:id="@+id/RatingBar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/btnBack_receipt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:backgroundTint="@color/grey"
+                        android:max="5"
+                        android:progressTint="@color/coloryellow"
+                        android:secondaryProgressTint="@color/coloryellow"
+                        android:visibility="gone"
+
+
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnBack_receipt"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite"
+            android:text="Back"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/buttontext_16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>
+

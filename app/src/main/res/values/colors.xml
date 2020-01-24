@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D01786</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D01786</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPinkDark">#e41995</color>
+    <color name="colorCountry">#606060</color>
+    <color name="colorEditText">#b8b8b8</color>
+    <color name="colortransparence">#FFFFFF</color>
+    <color name="colorCancelButton">#54c0f0</color>
+    <color name="viewButton">#54c0f0</color>
+    <color name="colorLime">#92BC39</color>
+    <color name="colorView">#EEEEEE</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_cream">#efe8e8</color>
+    <color name="colorDarkGrey">#606060</color>
+    <color name="colorGreen">#66cb78</color>
+    <color name="colorLightGrey">#b8b8b8</color>
+    <color name="colorGray">#9f9f97</color>
+    <color name="colorTextView">#808080</color>
+    <color name="editTextBackground">#ECE9E9</color>
+    <color name="colorGreyPrimary">#C1C2D5</color>
+
+
+    <color name="colorPink">#DD05F5</color>
+    <color name="colorSignUpPink">#E21993</color>
+    <color name="coloryellow">#F6B61A</color>
+    <color name="color_black">#060606</color>
+    <color name="color_grey">#838181</color>
+    <color name="color_pink">#e41995</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="color_back">#d6d2d2</color>
+    <color name="grey">#9A9A9A</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="button_color">#E21993</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorBackground">#f4f6fa</color>
+    <color name="background">#F4F6FA</color>
+
+
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorDarkBlue">#03001D</color>
+    <color name="colorGrey">#AAAAAA</color>
+
+</resources>

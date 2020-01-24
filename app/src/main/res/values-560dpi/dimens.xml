@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="linearItem180">188dp</dimen>
+    <dimen name="tvsize_16dp">18sp</dimen>
+    <dimen name="tvconfirm12">14sp</dimen>
+    <dimen name="tv_textViweC">20sp</dimen>
+    <dimen name="title_24sp">30sp</dimen>
+
+    <dimen name="subtitle_16sp">20sp</dimen>
+    <dimen name="paddin_10sp">13dp</dimen>
+    <dimen name="ts_12sp">16sp</dimen>
+    <dimen name="tvamountsend_32sp">35sp</dimen>
+
+    <dimen name="paddingetconfirmpay_4dp">6dp</dimen>
+
+    <dimen name="tv_confirmpayment12dp">16dp</dimen>
+
+    <dimen name="margintop_272dp">300dp</dimen>
+
+    <dimen name="margintoptitle_105dp">120dp</dimen>
+
+    <dimen name="titlets_16sp">20sp</dimen>
+
+    <dimen name="buttontext_16sp">18sp</dimen>
+    <dimen name="titlets_24sp">30sp</dimen>
+    <dimen name="padding_5">10dp</dimen>
+    <dimen name="subcancel_12sp">14sp</dimen>
+    <dimen name="subtitle_12sp">14sp</dimen>
+    <dimen name="padding_10dp">13dp</dimen>
+    <dimen name="subtitles_12sp">14sp</dimen>
+    <dimen name="buttonTitle_16sp">20sp</dimen>
+    <dimen name="subtilte_16sp">18sp</dimen>
+    <dimen name="buttonSize_60dp">64dp</dimen>
+    <dimen name="padding_15dp">17dp</dimen>
+    <dimen name="passing_5dp">7sp</dimen>
+    <dimen name="subtitle9sp">11sp</dimen>
+    <dimen name="width_20dp">30dp</dimen>
+    <dimen name="height_20dp">30dp</dimen>
+    <dimen name="savedcardheight_170">175dp</dimen>
+    <dimen name="marginstartsc_60">60dp</dimen>
+    <dimen name="height_60dp">70dp</dimen>
+    <dimen name="layoutheight_100dp">130dp</dimen>
+    <dimen name="layout_width100dp">130dp</dimen>
+    <dimen name="margin_top_8dp">10dp</dimen>
+
+    <dimen name="layout_widt_100dp">130dp</dimen>
+    <dimen name="layout_heigh_100dp">130dp</dimen>
+    <dimen name="marginTop_8dp">8dp</dimen>
+    <dimen name="marginBottom_5dp">7dp</dimen>
+    <dimen name="marginStart_80dp">95dp</dimen>
+    <dimen name="marginEnd_10dp">7dp</dimen>
+    <dimen name="activity_12sp">12sp</dimen>
+    <dimen name="marginEnd_40dp">40dp</dimen>
+    <dimen name="marginStart_40dp">40dp</dimen>
+</resources>

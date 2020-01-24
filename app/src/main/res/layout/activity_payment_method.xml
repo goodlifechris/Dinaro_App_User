@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/iv_paymentback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_19" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_root"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/customFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_with"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/title_24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:textColor="@color/colorPinkDark"
+                android:textSize="@dimen/tvForgotPassword_24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_preferred_method_of_payment"
+                android:textColor="@color/colorCountry"
+                android:textSize="@dimen/subtitle_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!"
+                android:textColor="@color/colorPinkDark"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivCard"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:src="@mipmap/ic_visa" />
+
+        <ImageView
+            android:id="@+id/ivMpesa"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:src="@mipmap/ic_mpesa" />
+
+        <ImageView
+            android:id="@+id/ivPayPal"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:src="@mipmap/ic_paypal" />
+
+        <ImageView
+            android:id="@+id/iv_jenga"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:src="@drawable/jenga" />
+
+
+
+        <!--<LinearLayout
+            android:id="@+id/layout_Pay"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/transparent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/visa_65_x_41"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/mastercard1"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>-->
+
+        <!-- <LinearLayout
+             android:id="@+id/payMpesa"
+             android:layout_width="match_parent"
+             android:layout_height="58dp"
+             android:layout_marginTop="20dp"
+             android:background="@color/colorLime">
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"
+                 android:src="@drawable/mpesa"
+                 tools:ignore="RtlCompat" />
+
+         </LinearLayout>
+ -->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/ivPayPal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/paypal"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back_paymentmethod"
+        style="@style/customFontStyleRobotoRegular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pink_button"
+        android:text="@string/back"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/subtitle_16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

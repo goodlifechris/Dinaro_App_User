@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/htab_collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_collapseParallaxMultiplier="0.75"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <LinearLayout
+                android:id="@+id/linearlayoutMajor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:animateLayoutChanges="true"
+                android:fitsSystemWindows="true"
+                android:layout_marginBottom="50dp"
+                app:layout_scrollFlags="scroll"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    tools:context=".fragments.PaymentsFragment">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout"
+                            style="@style/Headline"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView_storename"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/black"
+                                android:paddingTop="16dp"
+                                style="@style/TextAppearance.AppCompat.Title"
+                                android:layout_marginEnd="112dp"
+                                android:layout_marginRight="112dp"
+                                android:text="Payments" />
+
+
+                            <ImageView
+                                android:id="@+id/imageView_dinaro_logo"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:scaleType="centerInside"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_icon_logo"/>
+
+
+                        </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Recent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:textColor="#000"/>
+
+
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:scrollbars="none">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="6">
+
+                            <ImageView
+                                android:layout_width="96dp"
+                                android:layout_height="88dp"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dormans"/>
+
+                            <ImageView
+                                android:layout_width="96dp"
+                                android:layout_height="88dp"
+                                android:layout_weight="1"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/ocean"/>
+
+                            <ImageView
+                                android:layout_width="96dp"
+                                android:layout_height="88dp"
+                                android:layout_weight="1"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/java"/>
+
+                            <ImageView
+                                android:layout_width="96dp"
+                                android:layout_height="88dp"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/dormans"/>
+
+                            <ImageView
+                                android:layout_width="96dp"
+                                android:layout_height="88dp"
+                                android:layout_weight="1"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/ocean"/>
+
+                            <ImageView
+                                android:layout_width="96dp"
+                                android:layout_height="88dp"
+                                android:layout_weight="1"
+                                android:layout_margin="8dp"
+                                android:src="@drawable/java"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </HorizontalScrollView>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<!--            <android.support.v7.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/primary"-->
+<!--                android:minHeight="?attr/actionBarSize"-->
+<!--                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--                app:layout_collapseMode="pin"-->
+<!--                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+
+
+
+<!--            </android.support.v7.widget.Toolbar>-->
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/tvconfirm12"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:text="Search"
+                    />
+
+                <EditText
+                    android:id="@+id/move"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:textColorHint="@color/grey"
+                    android:hint="Type merchant name"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:background="@drawable/background_search" />
+
+
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="120dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:textSize="18sp"
+                        android:text="Popular"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_24dp"
+                        android:paddingStart="@dimen/tvconfirm12"
+                        android:paddingRight="12dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/brew"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:id="@+id/imageViewSteers"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/steers"
+                            android:layout_marginEnd="@dimen/tvconfirm12"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_24dp"
+                        android:paddingStart="@dimen/tvconfirm12"
+                        android:paddingRight="12dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/branch"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:id="@+id/imageViewAirtel"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:onClick="gotoAirtel"
+                            android:src="@drawable/airtelbig"
+                            android:layout_marginEnd="@dimen/tvconfirm12"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_24dp"
+                        android:paddingStart="@dimen/tvconfirm12"
+                        android:paddingRight="12dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/saf"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/carrefour"
+                            android:layout_marginEnd="@dimen/tvconfirm12"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_24dp"
+                        android:paddingStart="@dimen/tvconfirm12"
+                        android:paddingRight="12dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/brew"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:id="@+id/imageViewSteers"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/steers"
+                            android:layout_marginEnd="@dimen/tvconfirm12"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_24dp"
+                        android:paddingStart="@dimen/tvconfirm12"
+                        android:paddingRight="12dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/branch"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:id="@+id/imageViewAirtel"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:onClick="gotoAirtel"
+                            android:src="@drawable/airtelbig"
+                            android:layout_marginEnd="@dimen/tvconfirm12"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_24dp"
+                        android:paddingStart="@dimen/tvconfirm12"
+                        android:paddingRight="12dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/saf"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:src="@drawable/carrefour"
+                            android:layout_marginEnd="@dimen/tvconfirm12"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

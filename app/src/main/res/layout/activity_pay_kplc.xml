@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_20dp"
+        tools:context=".activities.PayKPLC">
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/layoutTextHelp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arrowing"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/customFontStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="KPLC"
+                    android:textColor="@color/color_black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/layoutTextHelp"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/image_payBill"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_imageview"
+                    android:padding="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Details"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_main"
+            android:layout_marginTop="20dp"
+            android:text="Details"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Details"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_Email"
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Number"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tvKplcName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/enter_account"
+                android:textColor="@color/colorCancelButton"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNumberEmailError"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutName"
+            android:textColor="@color/colorRed"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvNumberEmailError"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:id="@+id/layoutAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_Amount"
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/amount"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/enter_amount_owned"
+                android:textColor="@color/colorCancelButton"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAmountError"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutAmount"
+            android:text=""
+            android:textColor="@color/colorRed"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvAmountError"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/line"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_ConsumerDetails"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="37dp"
+            android:text="@string/consumer_details"
+            android:textColor="@color/color_black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layoutName2"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ConsumerDetails"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3.5">
+
+            <EditText
+                android:id="@+id/et_Name"
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|right"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Account holder"
+                android:textColor="@color/colorCancelButton"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNameError"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutName2"
+            android:text=""
+            android:textColor="@color/colorRed"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvNameError"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/line" />
+
+
+        <TextView
+            android:id="@+id/tv_Fees"
+
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="37dp"
+            android:text="***A fee of KES 15 will be charged."
+            android:textColor="@color/colorGray"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnPay"
+            style="@style/customFontStyleRobotoRegular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pink_button"
+            android:text="Pay"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/subtitle_16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</layout>

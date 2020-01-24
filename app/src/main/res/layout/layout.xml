@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/background"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp">
+
+            <LinearLayout
+                android:id="@+id/llActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivActivityPaybill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/padding_15dp"
+                    android:paddingTop="@dimen/padding_10dp"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:src="@drawable/path_273" />
+
+                <TextView
+                    android:id="@+id/tvActivityPaybill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/activity"
+                    android:textSize="@dimen/activity_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivProfilePaybill"
+                    android:layout_width="22dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/settings" />
+
+                <TextView
+                    android:id="@+id/tvProfilePaybill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:text="@string/title_setting"
+                    android:textSize="@dimen/activity_12sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivPayBill"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_paybill_button"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="4dp" />
+
+    </RelativeLayout>
+</layout>

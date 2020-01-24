@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phoneNumberFragment">
+
+
+        <fragment
+            android:id="@+id/phoneNumberFragment"
+            android:name="com.dinaro.fragments.PhoneNumberFragment"
+            android:label="fragment_phone_number"
+            tools:layout="@layout/fragment_phone_number" >
+
+
+
+            <action
+                android:id="@+id/action_phoneNumberFragment_to_checkRegisteredFragment"
+                app:destination="@id/checkRegisteredFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        </fragment>
+        <fragment
+            android:id="@+id/checkRegisteredFragment"
+            android:name="com.dinaro.fragments.CheckRegisteredFragment"
+            android:label="fragment_check_registered"
+            tools:layout="@layout/fragment_check_registered" >
+            <action
+                android:id="@+id/action_checkRegisteredFragment_to_passwordFragment"
+                app:destination="@id/passwordFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+            <action
+                android:id="@+id/action_checkRegisteredFragment_to_OTPFragment"
+                app:destination="@id/OTPFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        </fragment>
+        <fragment
+            android:id="@+id/passwordFragment"
+            android:name="com.dinaro.fragments.PasswordFragment"
+            android:label="fragment_password"
+            tools:layout="@layout/fragment_password" />
+        <fragment
+            android:id="@+id/emailAddressFragment"
+            android:name="com.dinaro.fragments.EmailAddressFragment"
+            android:label="fragment_email_address"
+            tools:layout="@layout/fragment_email_address" >
+            <action
+                android:id="@+id/action_emailAddressFragment_to_passwordFragment"
+                app:destination="@id/passwordFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        </fragment>
+        <fragment
+            android:id="@+id/OTPFragment"
+            android:name="com.dinaro.fragments.OTPFragment"
+            android:label="fragment_ot"
+            tools:layout="@layout/fragment_ot" >
+            <action
+                android:id="@+id/action_OTPFragment_to_namesFragment"
+                app:destination="@id/namesFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        </fragment>
+        <fragment
+            android:id="@+id/namesFragment"
+            android:name="com.dinaro.fragments.NamesFragment"
+            android:label="fragment_names"
+            tools:layout="@layout/fragment_names" >
+            <action
+                android:id="@+id/action_namesFragment_to_emailAddressFragment"
+                app:destination="@id/emailAddressFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        </fragment>
+
+</navigation>

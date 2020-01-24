@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/customFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_for"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/title_24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/customFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dot"
+                    android:textColor="@color/colorPinkDark"
+                    android:textSize="@dimen/tvForgotPassword_24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/customFontStyleRobotoRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/country_title"
+                android:textSize="@dimen/subtitle_16sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:src="@drawable/group" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="90"
+                            android:text="@string/nairobi"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/subtitle_16sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/account_number"
+                        android:textColor="@color/colorCountry"
+                        android:textSize="@dimen/subtitle_16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:background="@color/colorWhite"
+                            android:hint="@string/number"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:maxLines="1"
+                            android:padding="@dimen/paddingConfirmPay_4dp"
+                            android:textColorHint="@color/colorEditText" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="end"
+                            android:text="@string/view_details"
+                            android:textColor="@color/viewButton"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/colorEditText" />
+
+                    <TextView
+                        style="@style/customFontStyleRobotoRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:text="@string/consumer_details"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/subtitle_16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/Name"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/James"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/amount_due"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/KEY2500"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/due_date"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/Date"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/reference_id"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            style="@style/customFontStyleRobotoRegular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/J0301"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colorCountry"
+                            android:textSize="@dimen/tv_ConfirmPayment12sp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cp_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pink_button"
+            android:text="@string/pay"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/subtitle_16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</layout>

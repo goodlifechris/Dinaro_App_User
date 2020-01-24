@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:padding="22dp">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="366dp"
+                android:layout_height="682dp"
+                android:layout_below="@+id/rl_root"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_back_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_19"
+                    android:tint="@color/color_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_signup1"
+                        style="@style/customFontStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/titlets_24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_signup2"
+                        style="@style/customFontStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="."
+                        android:textColor="@color/colorPinkDark"
+                        android:textSize="@dimen/titlets_24sp" />
+
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="46dp"
+                                android:text="Your full name"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/titlets_16sp" />
+
+                            <EditText
+                                android:id="@+id/ed_firstname"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@null"
+                                android:digits="qwertyuioplkjhgfdsazxcbvnmWERRTYUIOPLKJHGFDSAZXCVBNM"
+                                android:hint="First name"
+                                android:inputType="textCapWords"
+                                android:maxLength="40"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_10dp"
+                                android:textColor="@color/colorGray"
+                                android:textColorHint="@color/colorEditText"
+                                android:textSize="@dimen/tvCountry_18" />
+
+                            <EditText
+                                android:id="@+id/ed_middlename"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@null"
+                                android:digits="qwertyuioplkjhgfdsazxcbvnmWERRTYUIOPLKJHGFDSAZXCVBNM"
+                                android:hint="Middle name"
+                                android:inputType="text"
+                                android:maxLength="40"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_10dp"
+                                android:textColor="@color/colorGray"
+                                android:textColorHint="@color/colorEditText"
+                                android:textSize="@dimen/tvCountry_18" />
+
+                            <EditText
+                                android:id="@+id/ed_lastname"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@null"
+                                android:digits="qwertyuioplkjhgfdsazxcbvnmWERRTYUIOPLKJHGFDSAZXCVBNM"
+                                android:hint="Last name"
+                                android:inputType="textCapWords"
+                                android:maxLength="40"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_10dp"
+                                android:textColor="@color/colorGray"
+                                android:textColorHint="@color/colorEditText"
+                                android:textSize="@dimen/tvCountry_18" />
+
+
+                            <TextView
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
+                                android:text="Mobile number"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/titlets_16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/customFontStyleRobotoRegular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingTop="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingBottom="5dp"
+
+                                    android:text="+254 7"
+                                    android:textColor="@color/colorEditText"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/ed_mobilenumber"
+                                    style="@style/customFontStyleRobotoRegular"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="8"
+                                    android:background="@null"
+                                    android:inputType="number"
+                                    android:maxLength="13"
+                                    android:maxLines="1"
+                                    android:paddingTop="@dimen/padding_10dp"
+                                    android:paddingRight="@dimen/padding_10dp"
+                                    android:paddingBottom="@dimen/padding_10dp"
+                                    android:textColor="@color/colorGray"
+                                    android:textColorHint="@color/colorEditText"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
+                                android:text="Email address"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/titlets_16sp" />
+
+                            <EditText
+                                android:id="@+id/edemail"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:background="@null"
+                                android:hint="example@mail.com"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="40"
+                                android:maxLines="1"
+                                android:padding="@dimen/padding_10dp"
+                                android:textColor="@color/colorGray"
+                                android:textColorHint="@color/colorEditText"
+                                android:textSize="@dimen/tvCountry_18" />
+
+                            <Button
+                                android:id="@+id/btn_signup"
+                                style="@style/customFontStyleRobotoRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_60dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="25dp"
+                                android:background="@drawable/pink_button"
+                                android:text="Save"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/tvCountry_18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+
+</layout>
